@@ -1,16 +1,51 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
+    <title>Accessible Portfolio</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <header role="heading" aria-level="1" style="background-color: crimson; color:white; text-align: center; padding: 1em 0;">
+        <h1>My Portfolio</h1>
+    </header>
+
+    <nav role="navigation" style="background-color: seagreen; padding: 0.5em;">
+        <ul style="list-style: none; padding: 0; margin: 0; display: flex; justify-content: center;">
+            <li role="listitem" style="margin-bottom: 0.5em;"><a href="#about" style="text-decoration: none; color: white; padding: 0.5em 1em;">About Me</a></li>
+            <li role="listitem" style="margin-bottom: 0.5em;"><a href="#projects" style="text-decoration: none; color: white; padding: 0.5em 1em;">Projects</a></li>
+            <li role="listitem" style="margin-bottom: 0.5em;"><a href="#contact" style="text-decoration: none; color: white; padding: 0.5em 1em;">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main style="padding: 2em;">
+
+        <section id="about">
+            <img src="profile.jpg" alt="My Profile Picture" role="img" style="max-width: 100%; height: auto; border-radius: 50%; margin-bottom: 1em;">
+            <p>
+                Welcome to my portfolio! I am a passionate web developer with a focus on creating accessible and user-friendly websites.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2 role="heading" aria-level="2" style="margin-bottom: 0.5em;">Projects</h2>
+            <ul role="list" style="list-style: none; padding: 0;">
+                <li role="listitem" style="margin-bottom: 0.5em;">Accessible Blog Platform</li>
+                <li role="listitem" style="margin-bottom: 0.5em;">Responsive E-commerce Website</li>
+                <li role="listitem" style="margin-bottom: 0.5em;">Interactive Portfolio Design</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2 role="heading" aria-level="2" style="margin-bottom: 0.5em;">Contact Me</h2>
+            <p>
+                Feel free to reach out to me via email at <a href="mailto: myemail@example.com" style="color: #333; text-decoration: underline;">myemail@example.com</a>.
+            </p>
+        </section>
+
+    </main>
 
 </body>
-
 </html>
